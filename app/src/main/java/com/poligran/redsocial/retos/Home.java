@@ -2,9 +2,16 @@ package com.poligran.redsocial.retos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.view.MenuItemCompat;
 
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.widget.SearchView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -33,6 +40,37 @@ public class Home extends AppCompatActivity {
         fab2.hide();
         fab3.hide();
 
+
+
+        fab3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Notificaciones.class);
+                startActivity(i);
+            }
+        });
+
+
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Companeros.class);
+                startActivity(i);
+            }
+        });
+
+        fab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Amigos.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,5 +98,19 @@ public class Home extends AppCompatActivity {
         fab3.hide();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
 
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
+
+        return true;
+    }
 }
