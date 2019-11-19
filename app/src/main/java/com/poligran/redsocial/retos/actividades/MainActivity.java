@@ -28,42 +28,5 @@ public class MainActivity extends AppCompatActivity {
 
         textViewResult = findViewById(R.id.text_view_result);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        Usuario_interface usuariointerface = retrofit.create(Usuario_interface.class);
-
-        Call<List<Usuario>> call = usuariointerface.getPosts();
-
-        call.enqueue(new Callback<List<Usuario>>() {
-            @Override
-            public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
-
-                if (!response.isSuccessful()) {
-                    textViewResult.setText("Code: " + response.code());
-                    return;
-                }
-
-                List<Usuario> usuarios = response.body();
-
-                for (Usuario usuario : usuarios) {
-                    String content = "";
-
-                    content += "ID: " + usuario.getId() + "\n";
-                    content += "User ID: " + usuario.getUserId() + "\n";
-                    content += "Title: " + usuario.getTitle() + "\n";
-                    content += "Text: " + usuario.getText() + "\n\n";
-
-                    textViewResult.append(content);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Usuario>> call, Throwable t) {
-                textViewResult.setText(t.getMessage());
-            }
-        });
     }
 }

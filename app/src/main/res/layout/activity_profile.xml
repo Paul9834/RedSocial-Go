@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.Profile">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="15dp"
+        app:cardCornerRadius="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Id_Name_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="20dp"
+                android:text="Name_Profile"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/Id_Image_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="250dp"
+                tools:srcCompat="@tools:sample/avatars[3]" />
+
+            <TextView
+                android:id="@+id/Id_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-80dp"
+                android:layout_marginTop="-210dp"
+                android:layout_marginBottom="20dp"
+                android:text="Name"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Id_Last_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-48dp"
+                android:layout_marginRight="-55dp"
+                android:layout_marginBottom="20dp"
+                android:text="Last_Name"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Id_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Description"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Id_Genero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Genero"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Id_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Location"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/Id_location_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                tools:srcCompat="@drawable/button_red" />
+
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

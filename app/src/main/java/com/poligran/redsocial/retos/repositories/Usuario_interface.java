@@ -8,6 +8,6 @@ import retrofit2.http.GET;
 
 public interface Usuario_interface {
 
-    @GET("posts")
+    @GET("profile/juankogmzk")
     Call<List<Usuario>> getPosts();
 }

@@ -11,35 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.SearchActivity">
+        <activity android:name="actividades.SearchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".actividades.Companeros"
+            android:name="actividades.Companeros"
             android:label="Compañeros"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".actividades.Amigos"
+            android:name="actividades.Amigos"
             android:label="Amigos"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".actividades.Notificaciones"
+            android:name="actividades.Notificaciones"
             android:label="Notificaciones"
             android:theme="@style/AppTheme3" />
         <activity
-            android:name=".actividades.Home"
+            android:name="actividades.Home"
             android:label="Inicio"
             android:theme="@style/AppTheme3" />
-        <activity android:name=".actividades.LoginActivity">
+        <activity android:name=".actividades.Profile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".actividades.MainActivity" /> <!-- Intent filter to catch Microsoft's callback after Sign In -->
+        <activity android:name="actividades.MainActivity" /> <!-- Intent filter to catch Microsoft's callback after Sign In -->
         <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
