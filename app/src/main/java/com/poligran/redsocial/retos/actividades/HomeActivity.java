@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.poligran.redsocial.retos.R;
 
 
-public class Home extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
 
     FloatingActionButton fab1;
@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
         fab3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Notificaciones.class);
+                Intent i = new Intent(getApplicationContext(), NotificationsActivity.class);
                 startActivity(i);
             }
         });
@@ -53,7 +53,7 @@ public class Home extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Companeros.class);
+                Intent i = new Intent(getApplicationContext(), CompanionsActivity.class);
                 startActivity(i);
             }
         });
@@ -61,7 +61,7 @@ public class Home extends AppCompatActivity {
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Amigos.class);
+                Intent i = new Intent(getApplicationContext(), FriendsActivity.class);
                 startActivity(i);
             }
         });
