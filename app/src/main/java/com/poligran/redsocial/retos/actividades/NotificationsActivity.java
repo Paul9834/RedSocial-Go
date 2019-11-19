@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.poligran.redsocial.retos.R;
 
-public class Amigos extends AppCompatActivity {
+public class NotificationsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_amigos);
+        setContentView(R.layout.activity_notificaciones);
     }
 }

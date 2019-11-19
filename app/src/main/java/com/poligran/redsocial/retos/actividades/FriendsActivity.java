@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.poligran.redsocial.retos.R;
 
-public class Companeros extends AppCompatActivity {
+public class FriendsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_companeros);
+        setContentView(R.layout.activity_amigos);
     }
 }

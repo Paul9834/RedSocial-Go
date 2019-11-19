@@ -303,7 +303,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void intent () {
-        Intent i = new Intent(LoginActivity.this, Home.class);
+        Intent i = new Intent(LoginActivity.this, HomeActivity.class);
         startActivity(i);
         finish();
     }
