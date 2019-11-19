@@ -1,10 +1,12 @@
-package com.poligran.redsocial.retos;
+package com.poligran.redsocial.retos.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.poligran.redsocial.retos.R;
 
 public class SearchActivity extends AppCompatActivity {
 

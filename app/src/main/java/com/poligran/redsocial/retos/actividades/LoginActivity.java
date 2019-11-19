@@ -1,4 +1,4 @@
-package com.poligran.redsocial.retos;
+package com.poligran.redsocial.retos.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.*;
@@ -15,6 +14,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.microsoft.identity.client.*;
 import com.microsoft.identity.client.exception.*;
+import com.poligran.redsocial.retos.R;
 
 import org.json.JSONObject;
 

@@ -1,14 +1,16 @@
-package com.poligran.redsocial.retos;
+package com.poligran.redsocial.retos.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Notificaciones extends AppCompatActivity {
+import com.poligran.redsocial.retos.R;
+
+public class Companeros extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notificaciones);
+        setContentView(R.layout.activity_companeros);
     }
 }

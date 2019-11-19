@@ -1,8 +1,6 @@
-package com.poligran.redsocial.retos;
+package com.poligran.redsocial.retos.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.view.MenuItemCompat;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -14,6 +12,7 @@ import android.view.View;
 import android.widget.SearchView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.poligran.redsocial.retos.R;
 
 
 public class Home extends AppCompatActivity {

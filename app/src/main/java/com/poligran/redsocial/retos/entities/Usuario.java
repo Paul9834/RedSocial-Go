@@ -1,8 +1,8 @@
-package com.poligran.redsocial.retos;
+package com.poligran.redsocial.retos.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Post {
+public class Usuario {
 
     private int userId;
 
